@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chap03", "Chap03", "{3F09CB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chap02", "Chap02", "{6AD4CDF7-A3B6-44DB-ACC5-A9088BB94C21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringNumberConversion", "StringNumberConversion\StringNumberConversion.csproj", "{09C30326-45BE-4ECC-87B4-656F33714465}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringNumberConversion", "StringNumberConversion\StringNumberConversion.csproj", "{09C30326-45BE-4ECC-87B4-656F33714465}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0706_EnumApp", "0706_EnumApp\0706_EnumApp.csproj", "{6FD6D1B0-7BFF-4621-BED6-8853127A4230}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{09C30326-45BE-4ECC-87B4-656F33714465}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09C30326-45BE-4ECC-87B4-656F33714465}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09C30326-45BE-4ECC-87B4-656F33714465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FD6D1B0-7BFF-4621-BED6-8853127A4230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FD6D1B0-7BFF-4621-BED6-8853127A4230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FD6D1B0-7BFF-4621-BED6-8853127A4230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FD6D1B0-7BFF-4621-BED6-8853127A4230}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{2655991D-7C24-41E4-AB3C-EFC65FB02E1C} = {3F09CB8E-E73F-40C3-AAD2-CD696F9236BD}
 		{D6FF2989-FC85-45B5-8331-977C897F3313} = {3F09CB8E-E73F-40C3-AAD2-CD696F9236BD}
 		{09C30326-45BE-4ECC-87B4-656F33714465} = {3F09CB8E-E73F-40C3-AAD2-CD696F9236BD}
+		{6FD6D1B0-7BFF-4621-BED6-8853127A4230} = {3F09CB8E-E73F-40C3-AAD2-CD696F9236BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A111A6BC-DBF7-4C98-A4F5-709D3B76E685}
