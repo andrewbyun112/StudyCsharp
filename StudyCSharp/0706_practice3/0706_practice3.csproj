@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F19F89D1-3A9F-40E2-8B56-E00C152DAD13}</ProjectGuid>
+    <ProjectGuid>{88F9CD2E-B414-4602-80ED-3641B79331BF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_0706_NullableApp</RootNamespace>
-    <AssemblyName>0706_NullableApp</AssemblyName>
+    <RootNamespace>_0706_practice3</RootNamespace>
+    <AssemblyName>0706_practice3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
