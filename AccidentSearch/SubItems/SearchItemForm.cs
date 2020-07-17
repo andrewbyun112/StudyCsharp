@@ -1,13 +1,7 @@
 ﻿using MetroFramework.Forms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -44,14 +38,11 @@ namespace AccidentSearch.SubItems
             wc = new WebClient() { Encoding = Encoding.UTF8 };
             doc = new XmlDocument();
             StringBuilder str = new StringBuilder();
-            str.Append("http://apis.data.go.kr/B552061/frequentzoneLgrViolt/getRestFrequentzoneLgrViolt");
+            str.Append("http://openapi.animal.go.kr/openapi/service/rest/recordAgencySrvc/recordAgency");
             str.Append("?serviceKey=Z3K62vdCuIDC2FkIVI5z6sV1KWEFL%2B6CoVJPKxLwVevzTk2WmwYdGfmUhaCC%2Bx932u%2B7ITe3s9n8qnv473lDEg%3D%3D");
-            str.Append("&searchYearCd=2017");
-            str.Append($"&siDo=11");
-            str.Append($"&guGun=680");
-            str.Append("&type=xml");
-            str.Append("&numOfRows=10");
             str.Append("&pageNo=1");
+            str.Append("&numOfRows=10");
+            str.Append($"&addr={TxtSearchItem.Text}");
 
             string xml = wc.DownloadString(str.ToString());
             doc.LoadXml(xml);
@@ -64,14 +55,11 @@ namespace AccidentSearch.SubItems
             {
                 foreach (XmlNode item in items)
                 {
-                    DgvSearchItems.Rows.Add(item["sido_sgg_nm"].InnerText,
-                                                                item["spot_nm"].InnerText,
-                                                                item["occrrnc_cnt"].InnerText,
-                                                                item["caslt_cnt"].InnerText,
-                                                                item["dth_dnv_cnt"].InnerText,
-                                                                item["se_dnv_cnt"].InnerText,
-                                                                item["sl_dnv_cnt"].InnerText,
-                                                                item["wnd_dnv_cnt"].InnerText
+                    DgvSearchItems.Rows.Add(item["orgNm"].InnerText,
+                                                                item["memberNm"].InnerText,
+                                                                item["orgAddr"].InnerText,
+                                                                item["orgAddrDtl"] == null ? string.Empty : item["orgAddrDtl"].InnerText,
+                                                                item["tel"].InnerText
                                                                );
                 }
             }

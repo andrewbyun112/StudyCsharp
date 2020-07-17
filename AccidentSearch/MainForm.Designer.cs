@@ -34,12 +34,12 @@
             // 
             // metroTile2
             // 
-            this.metroTile2.Location = new System.Drawing.Point(204, 63);
+            this.metroTile2.Location = new System.Drawing.Point(274, 63);
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.Size = new System.Drawing.Size(175, 112);
             this.metroTile2.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroTile2.TabIndex = 0;
-            this.metroTile2.Text = "다발지역 Rest 조회";
+            this.metroTile2.Text = "준비중...";
             this.metroTile2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.metroTile2.TileImage = global::AccidentSearch.Properties.Resources.iconfinder_Facebook_UI_07_2344289;
             this.metroTile2.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -49,12 +49,12 @@
             // 
             this.MtlSearchItem.Location = new System.Drawing.Point(23, 63);
             this.MtlSearchItem.Name = "MtlSearchItem";
-            this.MtlSearchItem.Size = new System.Drawing.Size(175, 112);
+            this.MtlSearchItem.Size = new System.Drawing.Size(245, 112);
             this.MtlSearchItem.Style = MetroFramework.MetroColorStyle.Teal;
             this.MtlSearchItem.TabIndex = 0;
-            this.MtlSearchItem.Text = "다발지역 Rest 조회";
+            this.MtlSearchItem.Text = "반려동물 등록대행업체 조회 ";
             this.MtlSearchItem.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.MtlSearchItem.TileImage = global::AccidentSearch.Properties.Resources.accident;
+            this.MtlSearchItem.TileImage = global::AccidentSearch.Properties.Resources.iconfinder_ic_pets_48px_3669300;
             this.MtlSearchItem.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.MtlSearchItem.UseTileImage = true;
             this.MtlSearchItem.Click += new System.EventHandler(this.MtlSearchItem_Click);
@@ -69,7 +69,7 @@
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Resizable = false;
-            this.Text = "법규위반별사고 다발지역정보 조회";
+            this.Text = "반려동물 등록대행업체 조회 서비스";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
 

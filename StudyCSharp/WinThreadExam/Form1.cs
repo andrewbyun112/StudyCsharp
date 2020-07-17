@@ -25,10 +25,7 @@ namespace WinThreadExam
             th.Start();
             th.Join();
         }
-        private void BtnStart_Click(object sender, EventArgs e)
-        {
-            
-        }
+
 
         void Progress()
         {
@@ -40,7 +37,5 @@ namespace WinThreadExam
                 PrgSample.Value = i;
             }
         }
-
-        
     }
 }

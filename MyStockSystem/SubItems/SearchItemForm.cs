@@ -36,11 +36,6 @@ namespace MyStockSystem.SubItems
             this.Close();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void BtnSearch_Click(object sender, EventArgs e)
         {
             WebClient wc = null;
@@ -51,7 +46,7 @@ namespace MyStockSystem.SubItems
 
             StringBuilder str = new StringBuilder();
             str.Append("http://api.seibro.or.kr/openapi/service/StockSvc/getStkIsinByNmN1"); // OpenAPI 기본
-            str.Append("?serviceKey=Nvajuv%2BuNyZAo90FChDLxeqL65FaAsYMo%2B2Pq%2FS8MjPQi7OhfjD8xbdJFTgpOBgi%2F8CIdxs9JSoH1hskIVxNiQ%3D%3D"); // 인증키
+            str.Append("?serviceKey=Z3K62vdCuIDC2FkIVI5z6sV1KWEFL%2B6CoVJPKxLwVevzTk2WmwYdGfmUhaCC%2Bx932u%2B7ITe3s9n8qnv473lDEg%3D%3D"); // 인증키
             str.Append($"&secnNm={TxtSearchItem.Text}"); // 검색어
             str.Append("&numOfRows=200"); // 읽어올 데이터수
             str.Append("&pageNo=1"); // 페이지번호
@@ -92,11 +87,6 @@ namespace MyStockSystem.SubItems
             {
                 BtnSearch_Click(sender, new EventArgs());
             }
-        }
-
-        private void TxtSearchItem_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

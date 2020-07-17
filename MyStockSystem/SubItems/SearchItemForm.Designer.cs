@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchItemForm));
-            this.MtlBack = new MetroFramework.Controls.MetroTile();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -42,6 +41,7 @@
             this.SECNKACDNM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SHOTNISIN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.MtlBack = new MetroFramework.Controls.MetroTile();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -50,18 +50,6 @@
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvSearchItems)).BeginInit();
             this.SuspendLayout();
-            // 
-            // MtlBack
-            // 
-            this.MtlBack.Location = new System.Drawing.Point(1187, 657);
-            this.MtlBack.Name = "MtlBack";
-            this.MtlBack.Size = new System.Drawing.Size(70, 40);
-            this.MtlBack.Style = MetroFramework.MetroColorStyle.Blue;
-            this.MtlBack.TabIndex = 1;
-            this.MtlBack.TileImage = global::MyStockSystem.Properties.Resources.back2;
-            this.MtlBack.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.MtlBack.UseTileImage = true;
-            this.MtlBack.Click += new System.EventHandler(this.MtlBack_Click);
             // 
             // metroTabControl1
             // 
@@ -111,7 +99,6 @@
             this.TxtSearchItem.Name = "TxtSearchItem";
             this.TxtSearchItem.Size = new System.Drawing.Size(336, 44);
             this.TxtSearchItem.TabIndex = 1;
-            this.TxtSearchItem.Click += new System.EventHandler(this.TxtSearchItem_Click);
             this.TxtSearchItem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSearchItem_KeyPress);
             // 
             // BtnSearch
@@ -140,7 +127,6 @@
             this.DgvSearchItems.RowTemplate.Height = 23;
             this.DgvSearchItems.Size = new System.Drawing.Size(1226, 496);
             this.DgvSearchItems.TabIndex = 0;
-            this.DgvSearchItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ISIN
             // 
@@ -182,6 +168,18 @@
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "해당정보수집";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
+            // 
+            // MtlBack
+            // 
+            this.MtlBack.Location = new System.Drawing.Point(1187, 657);
+            this.MtlBack.Name = "MtlBack";
+            this.MtlBack.Size = new System.Drawing.Size(70, 40);
+            this.MtlBack.Style = MetroFramework.MetroColorStyle.Blue;
+            this.MtlBack.TabIndex = 1;
+            this.MtlBack.TileImage = global::MyStockSystem.Properties.Resources.back2;
+            this.MtlBack.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MtlBack.UseTileImage = true;
+            this.MtlBack.Click += new System.EventHandler(this.MtlBack_Click);
             // 
             // SearchItemForm
             // 

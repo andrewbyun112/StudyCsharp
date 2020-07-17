@@ -33,16 +33,14 @@
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.BtnSearch = new MetroFramework.Controls.MetroButton();
-            this.TxtSearchItem = new MetroFramework.Controls.MetroTextBox();
             this.DgvSearchItems = new System.Windows.Forms.DataGridView();
-            this.sido_sgg_nm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.spot_nm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.occrrnc_cnt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.caslt_cnt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dth_dnv_cnt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.se_dnv_cnt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sl_dnv_cnt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wnd_dnv_cnt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TxtSearchItem = new MetroFramework.Controls.MetroTextBox();
+            this.orgNm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.memberNm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orgAddr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orgAddrDtl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -85,6 +83,7 @@
             // 
             // splitContainer1
             // 
+            this.splitContainer1.BackColor = System.Drawing.Color.White;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
@@ -92,6 +91,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.metroLabel1);
             this.splitContainer1.Panel1.Controls.Add(this.TxtSearchItem);
             this.splitContainer1.Panel1.Controls.Add(this.BtnSearch);
             // 
@@ -111,6 +111,24 @@
             this.BtnSearch.Text = "검색";
             this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
+            // DgvSearchItems
+            // 
+            this.DgvSearchItems.AllowUserToAddRows = false;
+            this.DgvSearchItems.AllowUserToDeleteRows = false;
+            this.DgvSearchItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvSearchItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.orgNm,
+            this.memberNm,
+            this.orgAddr,
+            this.orgAddrDtl,
+            this.tel});
+            this.DgvSearchItems.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DgvSearchItems.Location = new System.Drawing.Point(0, 0);
+            this.DgvSearchItems.Name = "DgvSearchItems";
+            this.DgvSearchItems.RowTemplate.Height = 23;
+            this.DgvSearchItems.Size = new System.Drawing.Size(945, 394);
+            this.DgvSearchItems.TabIndex = 0;
+            // 
             // TxtSearchItem
             // 
             this.TxtSearchItem.FontSize = MetroFramework.MetroTextBoxSize.Medium;
@@ -120,66 +138,41 @@
             this.TxtSearchItem.TabIndex = 1;
             this.TxtSearchItem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSearchItem_KeyPress);
             // 
-            // DgvSearchItems
+            // orgNm
             // 
-            this.DgvSearchItems.AllowUserToAddRows = false;
-            this.DgvSearchItems.AllowUserToDeleteRows = false;
-            this.DgvSearchItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvSearchItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.sido_sgg_nm,
-            this.spot_nm,
-            this.occrrnc_cnt,
-            this.caslt_cnt,
-            this.dth_dnv_cnt,
-            this.se_dnv_cnt,
-            this.sl_dnv_cnt,
-            this.wnd_dnv_cnt});
-            this.DgvSearchItems.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DgvSearchItems.Location = new System.Drawing.Point(0, 0);
-            this.DgvSearchItems.Name = "DgvSearchItems";
-            this.DgvSearchItems.RowTemplate.Height = 23;
-            this.DgvSearchItems.Size = new System.Drawing.Size(945, 394);
-            this.DgvSearchItems.TabIndex = 0;
+            this.orgNm.HeaderText = "병원이름";
+            this.orgNm.Name = "orgNm";
             // 
-            // sido_sgg_nm
+            // memberNm
             // 
-            this.sido_sgg_nm.HeaderText = "시도시군구명";
-            this.sido_sgg_nm.Name = "sido_sgg_nm";
+            this.memberNm.HeaderText = "대표자명";
+            this.memberNm.Name = "memberNm";
             // 
-            // spot_nm
+            // orgAddr
             // 
-            this.spot_nm.HeaderText = "지점명";
-            this.spot_nm.Name = "spot_nm";
+            this.orgAddr.HeaderText = "주소";
+            this.orgAddr.Name = "orgAddr";
             // 
-            // occrrnc_cnt
+            // orgAddrDtl
             // 
-            this.occrrnc_cnt.HeaderText = "발생건수";
-            this.occrrnc_cnt.Name = "occrrnc_cnt";
+            this.orgAddrDtl.HeaderText = "상세주소";
+            this.orgAddrDtl.Name = "orgAddrDtl";
             // 
-            // caslt_cnt
+            // tel
             // 
-            this.caslt_cnt.HeaderText = "사상자수";
-            this.caslt_cnt.Name = "caslt_cnt";
+            this.tel.HeaderText = "전화번호";
+            this.tel.Name = "tel";
             // 
-            // dth_dnv_cnt
+            // metroLabel1
             // 
-            this.dth_dnv_cnt.HeaderText = "사망자수";
-            this.dth_dnv_cnt.Name = "dth_dnv_cnt";
-            // 
-            // se_dnv_cnt
-            // 
-            this.se_dnv_cnt.HeaderText = "중상자수";
-            this.se_dnv_cnt.Name = "se_dnv_cnt";
-            // 
-            // sl_dnv_cnt
-            // 
-            this.sl_dnv_cnt.HeaderText = "경상자수";
-            this.sl_dnv_cnt.Name = "sl_dnv_cnt";
-            // 
-            // wnd_dnv_cnt
-            // 
-            this.wnd_dnv_cnt.HeaderText = "부상신고자수";
-            this.wnd_dnv_cnt.Name = "wnd_dnv_cnt";
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.metroLabel1.Location = new System.Drawing.Point(588, 12);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(48, 19);
+            this.metroLabel1.TabIndex = 2;
+            this.metroLabel1.Text = "지역 : ";
+            this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SearchItemForm
             // 
@@ -189,11 +182,12 @@
             this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.MtlBack);
             this.Name = "SearchItemForm";
-            this.Text = "SearchItemForm";
+            this.Text = "등록대행업체 지역검색";
             this.Load += new System.EventHandler(this.SearchItemForm_Load);
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
@@ -208,16 +202,14 @@
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private MetroFramework.Controls.MetroTabPage metroTabPage1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private MetroFramework.Controls.MetroTextBox TxtSearchItem;
         private MetroFramework.Controls.MetroButton BtnSearch;
         private System.Windows.Forms.DataGridView DgvSearchItems;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sido_sgg_nm;
-        private System.Windows.Forms.DataGridViewTextBoxColumn spot_nm;
-        private System.Windows.Forms.DataGridViewTextBoxColumn occrrnc_cnt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn caslt_cnt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dth_dnv_cnt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn se_dnv_cnt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sl_dnv_cnt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn wnd_dnv_cnt;
+        private MetroFramework.Controls.MetroTextBox TxtSearchItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orgNm;
+        private System.Windows.Forms.DataGridViewTextBoxColumn memberNm;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orgAddr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orgAddrDtl;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tel;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
     }
 }

@@ -26,5 +26,6 @@ namespace WindowsFormsApp1
         {
             MessageBox.Show("EventHandler maden!");
         }
+
     }
 }

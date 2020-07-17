@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3B589F25-85D8-4703-B69D-43984B74FA81}</ProjectGuid>
+    <ProjectGuid>{BD1B21E1-BD59-4B02-897F-D4E8957B7371}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>SimpleLambda</RootNamespace>
     <AssemblyName>SimpleLambda</AssemblyName>

@@ -3,14 +3,14 @@
     partial class Form1
     {
         /// <summary>
-        /// 필수 디자이너 변수입니다.
+        ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// 사용 중인 모든 리소스를 정리합니다.
+        ///  Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,48 +20,44 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form 디자이너에서 생성한 코드
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// 디자이너 지원에 필요한 메서드입니다. 
-        /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.PrgSample = new System.Windows.Forms.ProgressBar();
-            this.BtnStart = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PrgSample
             // 
             this.PrgSample.Location = new System.Drawing.Point(12, 12);
             this.PrgSample.Name = "PrgSample";
-            this.PrgSample.Size = new System.Drawing.Size(418, 24);
+            this.PrgSample.Size = new System.Drawing.Size(443, 66);
             this.PrgSample.TabIndex = 0;
-            this.PrgSample.Click += new System.EventHandler(this.BtnStart_Click);
             // 
-            // BtnStart
+            // button1
             // 
-            this.BtnStart.Location = new System.Drawing.Point(355, 42);
-            this.BtnStart.Name = "BtnStart";
-            this.BtnStart.Size = new System.Drawing.Size(75, 23);
-            this.BtnStart.TabIndex = 1;
-            this.BtnStart.Text = "Start";
-            this.BtnStart.UseVisualStyleBackColor = true;
-            this.BtnStart.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Location = new System.Drawing.Point(355, 84);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 45);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Start";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 73);
-            this.Controls.Add(this.BtnStart);
+            this.ClientSize = new System.Drawing.Size(471, 163);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.PrgSample);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "thread 예제";
+            this.Text = "Form1";
             this.ResumeLayout(false);
 
         }
@@ -69,7 +65,7 @@
         #endregion
 
         private System.Windows.Forms.ProgressBar PrgSample;
-        private System.Windows.Forms.Button BtnStart;
+        private System.Windows.Forms.Button button1;
     }
 }
 
